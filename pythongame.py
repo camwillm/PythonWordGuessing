@@ -37,3 +37,15 @@ def update_progress(word, current_progress, guessed_letter):
         else:
             new_progress += current_progress[i]
     return new_progress
+
+
+def play_word_game(word, numguess):
+    progressunderlines = "_" * len(word)
+    guessleft = numguess
+    wrongletter = ""
+    while True:
+        print_status(progressunderlines, wrongletter, guessleft)
+        exit()
+
+
+play_word_game("Hello", 10)
